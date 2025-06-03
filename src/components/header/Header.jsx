@@ -6,12 +6,7 @@ function Header() {
     const closeHour = 21;
 
     let isOpen;
-
-    if (hour >= openHour && hour <= closeHour) {
-        isOpen = true;
-    } else {
-        isOpen = false;
-    }
+    isOpen = hour >= openHour && hour <= closeHour
 
     return (
         <header className="header">

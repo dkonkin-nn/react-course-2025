@@ -52,9 +52,8 @@ const productData = [
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header />
       <Catalog>
-
         {productData.map((i, index) => {
           return <Product product={i} key={index} />
         })}
