@@ -1,7 +1,10 @@
+import "./Catalog.css"
+
 function Catalog(props) {
+
     return (
-        <main>
-            <ul>
+        <main className="catalog">
+            <ul className="products">
                 {props.children}
             </ul>
         </main>
